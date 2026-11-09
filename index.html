@@ -103,7 +103,7 @@ p{margin:0;text-wrap:pretty}
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:3px;border-radius:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
 .nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}
 .lang{display:flex;padding:3px;border-radius:10px;background:rgba(5,16,60,.35)}
-.lang button{min-width:42px;min-height:38px;border:0;border-radius:8px;background:none;color:#fff;font:800 .85rem var(--display);cursor:pointer;transition:background-color .2s,color .2s}
+.lang button{min-width:44px;min-height:44px;border:0;border-radius:8px;background:none;color:#fff;font:800 .85rem var(--display);cursor:pointer;transition:background-color .2s,color .2s}
 .lang button[aria-pressed=true]{background:#fff;color:var(--blue)}
 .hdr .btn{min-height:44px;padding:.4em 1em;font-size:.95rem}
 .hdr .btn .num{display:none}
@@ -165,7 +165,7 @@ p{margin:0;text-wrap:pretty}
 .card-b{padding:26px;transition:transform .6s var(--ease)}
 .card h3{font-size:clamp(1.35rem,2.4vw,1.7rem)}
 .card p{margin-top:8px;color:#DCE7FF;max-width:30em}
-@media (hover:hover) and (pointer:fine){.card:hover img{transform:scale(1.07)}.card:hover .card-ico{transform:rotate(-12deg) scale(1.1)}.card:hover .card-b{transform:translateY(-6px)}}
+@media (hover:hover) and (pointer:fine){.card:hover img{transform:scale(1.03)}.card:hover .card-ico{transform:rotate(-12deg) scale(1.1)}.card:hover .card-b{transform:translateY(-6px)}}
 @media (min-width:760px){.cards{grid-template-columns:repeat(12,1fr);gap:22px}.card{min-height:400px}.card-w:nth-child(1),.card-w:nth-child(4){grid-column:span 7}.card-w:nth-child(2),.card-w:nth-child(3){grid-column:span 5}}
 
 /* Area call to action */
@@ -245,11 +245,11 @@ p{margin:0;text-wrap:pretty}
 .ftr img{width:250px}
 .ftr h3{font-size:1rem;color:#fff;margin-bottom:10px}
 .ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.ftr a{color:#fff;text-decoration:none;display:inline-block;padding:6px 0}
+.ftr a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 .ftr a:hover{text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:2px;text-underline-offset:5px}
 .ftr-meta{margin-top:14px;max-width:24em}
 .credits{margin-top:36px;font-size:.9rem;color:#9FB0E0;max-width:60em}
-.credits a{padding:0;color:#C5D2F5;text-decoration:underline;text-underline-offset:3px}
+.credits a{min-height:0;display:inline;color:#C5D2F5;text-decoration:underline;text-underline-offset:3px}
 .legal{margin-top:20px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
 @media (min-width:800px){.ftr-in{grid-template-columns:1.5fr 1fr 1fr}.ftr{padding-bottom:56px}}
 
@@ -343,7 +343,8 @@ p{margin:0;text-wrap:pretty}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *{transition-duration:.01ms!important}
+  .btn,.card img,.card-ico,.card-b,.svc-ico,.wa,.nav a::after{transition-property:background-color,color,box-shadow,opacity}
+  .btn:active,.wa:active{transform:none}
   .splash.out,.splash-y.out{display:none}
   .mq-t{flex-wrap:wrap;width:auto;justify-content:center;row-gap:10px}.mq-g+.mq-g{display:none}
 }
@@ -385,7 +386,7 @@ p{margin:0;text-wrap:pretty}
       <button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button>
       <button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
     </div>
-    <a class="btn btn-y" style="--i:3" href="tel:+12813029085"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl" data-t="call">Llamar</span><span class="num">(281) 302-9085</span></a>
+    <a class="btn btn-y" href="tel:+12813029085" aria-label="Llamar al (281) 302-9085" data-t-aria="callAria"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl" data-t="call">Llamar</span><span class="num">(281) 302-9085</span></a>
   </div>
 </header>
 
@@ -521,7 +522,7 @@ p{margin:0;text-wrap:pretty}
     <div class="ftr-in">
       <div>
         <img src="assets/logo-full.svg" alt="Air Energy · Air Conditioning &amp; Heating · Your Trusted Company" width="661" height="264" loading="lazy">
-        <p class="ftr-meta"><span data-t="ftLic">Licencia de Texas</span> TACLB84520 · BBB A+</p>
+        <p class="ftr-meta"><span data-t="ftLic">Licencia de Texas</span> TACLB84520<br><span data-t="cred2">Calificación A+ en BBB</span></p>
       </div>
       <div>
         <h3 data-t="ftNav">Sitio</h3>
@@ -548,9 +549,10 @@ p{margin:0;text-wrap:pretty}
       <span><span data-t="by">Diseñado por</span> <a href="https://dgpglobalgroup.com" target="_blank" rel="noopener">DGP Global Group</a></span>
     </div>
   </div>
+<a class="wa" href="https://wa.me/12813029085" data-wa target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-t-aria="waAria"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
 </footer>
 
-<a class="wa" href="https://wa.me/12813029085" data-wa target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-t-aria="waAria"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+
 
 <script>
 (function(){
@@ -595,7 +597,7 @@ p{margin:0;text-wrap:pretty}
       fail:'No se pudo enviar. Llámenos al (281) 302-9085 o intente de nuevo.',
       fNote:'Solo usamos sus datos para contactarle sobre su solicitud.',
       ftLic:'Licencia de Texas', ftNav:'Sitio', rights:'Todos los derechos reservados.', by:'Diseñado por',
-      waAria:'Escribir por WhatsApp', waMsg:'Hola, quiero información sobre sus servicios de aire acondicionado.'
+      waAria:'Escribir por WhatsApp', callAria:'Llamar al (281) 302-9085', waMsg:'Hola, quiero información sobre sus servicios de aire acondicionado.'
     },
     en:{
       title:'Air Energy AC · Air Conditioning & Heating in Houston, TX',
@@ -636,7 +638,7 @@ p{margin:0;text-wrap:pretty}
       fail:'It could not be sent. Call us at (281) 302-9085 or try again.',
       fNote:'We only use your details to contact you about your request.',
       ftLic:'Texas License', ftNav:'Site', rights:'All rights reserved.', by:'Designed by',
-      waAria:'Message us on WhatsApp', waMsg:'Hi, I would like information about your air conditioning services.'
+      waAria:'Message us on WhatsApp', callAria:'Call (281) 302-9085', waMsg:'Hi, I would like information about your air conditioning services.'
     }
   };
   var lang='es';
