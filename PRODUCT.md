@@ -40,6 +40,8 @@ Visitors arrive mostly on a phone. Primary actions, in order: call, send the quo
 
 ## Evidence on Hand
 - `assets/logo.jpg`: photo of the wrapped service van (logo, mascot, license, BBB badge).
+- `assets/foto-*.webp` and `assets/houston*.webp`: openly licensed reference photos (U.S. Air Force public domain, rawpixel CC0, Jason Villanueva CC0, Shixart1985 CC BY 2.0, credited in the footer). They are placeholders until the client sends photos of real jobs.
+- The mascot appears once, in the hero (client request).
 - No customer reviews, no job photos, no team photos. Do not fabricate testimonials, ratings, statistics or guarantees.
 
 ## Product Principles
