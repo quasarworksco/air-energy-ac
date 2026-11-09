@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /entrega/
+
+Sitemap: https://quasarworksco.github.io/air-energy-ac/sitemap.xml
