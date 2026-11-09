@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Air Energy AC · Aire acondicionado y calefacción en Houston, TX</title>
 <meta name="description" content="Air Energy AC: instalación, reparación y mantenimiento de aire acondicionado y calefacción en Houston y áreas cercanas. Licencia TACLB84520, BBB A+. Llame al (281) 302-9085.">
-<meta name="theme-color" content="#0B3FD6">
+<meta name="theme-color" content="#071233">
 <link rel="canonical" href="https://airenergyac.dgp-link.com/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-48.png" sizes="48x48" type="image/png">
@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,800;1,900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/mascota.webp" imagesrcset="assets/mascota-420.webp 420w, assets/mascota.webp 840w" imagesizes="(max-width: 899px) 60vw, 420px">
+<link rel="preload" as="image" href="assets/hero.webp" imagesrcset="assets/hero-900.webp 900w, assets/hero.webp 1920w" imagesizes="100vw">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,8 +50,8 @@ window.__spSafe=setTimeout(function(){h.classList.remove('sp');h.classList.add('
 <style>
 :root{
   --ease-io:cubic-bezier(.77,0,.175,1);
-  --blue:#0B3FD6; --blue-600:#0934B4; --navy:#0B1E6B; --ink:#0A1640;
-  --yellow:#FFC900; --yellow-600:#F0B400; --sky:#38B6FF;
+  --blue:#1546C2; --blue-600:#0F389F; --navy:#0A1A4F; --night:#071233; --ink:#0A1640;
+  --yellow:#FDBE12; --yellow-600:#F0B400; --sky:#38B6FF;
   --paper:#fff; --mist:#F2F6FE; --line:#D9E2F5; --muted:#46557F;
   --wa:#0F7F43;
   --display:"Montserrat",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
@@ -81,20 +81,20 @@ p{margin:0;text-wrap:pretty}
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:.7em 1.5em;border:0;border-radius:12px;font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:-.005em;text-decoration:none;cursor:pointer;transition:transform .16s ease-out,background-color .2s ease,box-shadow .2s ease,color .2s ease;white-space:nowrap}
 .btn:active{transform:scale(.97)}
-.btn-y{background:var(--yellow);color:var(--navy);box-shadow:0 6px 18px -6px rgba(5,16,60,.55)}
-.btn-ghost{background:rgba(255,255,255,.1);color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
-.btn-navy{background:var(--navy);color:#fff;box-shadow:0 8px 20px -8px rgba(11,30,107,.7)}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 20px -8px rgba(11,63,214,.7)}
+.btn-y{background:linear-gradient(180deg,#FFD043,var(--yellow));color:var(--night);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(4,10,36,.3),0 10px 22px -6px rgba(4,10,36,.55),0 22px 44px -18px rgba(253,190,18,.5)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5),0 10px 24px -8px rgba(4,10,36,.6)}
+.btn-navy{background:linear-gradient(180deg,#132A72,var(--navy));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 1px 2px rgba(4,10,36,.3),0 12px 26px -8px rgba(7,18,51,.7)}
+.btn-blue{background:linear-gradient(180deg,#1F55DA,var(--blue));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(4,10,36,.25),0 12px 26px -8px rgba(21,70,194,.65),0 24px 44px -20px rgba(21,70,194,.5)}
 @media (hover:hover) and (pointer:fine){
-  .btn-y:hover{background:#FFD83A;transform:translateY(-2px);box-shadow:0 12px 24px -8px rgba(5,16,60,.6)}
-  .btn-ghost:hover{background:#fff;color:var(--blue);box-shadow:inset 0 0 0 2px #fff}
-  .btn-navy:hover{background:#12298A;transform:translateY(-2px)}
-  .btn-blue:hover{background:var(--blue-600);transform:translateY(-2px)}
+  .btn-y:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 2px 4px rgba(4,10,36,.3),0 18px 30px -8px rgba(4,10,36,.6),0 30px 54px -18px rgba(253,190,18,.6)}
+  .btn-ghost:hover{background:#fff;color:var(--navy);transform:translateY(-3px);box-shadow:inset 0 0 0 1.5px #fff,0 18px 30px -10px rgba(4,10,36,.65)}
+  .btn-navy:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 2px 4px rgba(4,10,36,.3),0 20px 34px -10px rgba(7,18,51,.75)}
+  .btn-blue:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 2px 4px rgba(4,10,36,.25),0 20px 34px -10px rgba(21,70,194,.7),0 32px 54px -20px rgba(21,70,194,.55)}
 }
 
 /* Header */
-.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background-color .3s,box-shadow .3s}
-.hdr.stuck{background:var(--blue);box-shadow:0 6px 24px -10px rgba(5,16,60,.6)}
+.hdr{position:fixed;inset:0 0 auto;z-index:50;background:linear-gradient(180deg,rgba(7,18,51,.78),rgba(7,18,51,0));transition:background-color .3s,box-shadow .3s}
+.hdr.stuck{background:rgba(7,18,51,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.08),0 12px 30px -14px rgba(4,10,36,.8)}
 .hdr-in{display:flex;align-items:center;gap:16px;height:72px}
 .brand{flex:none;margin-right:auto}
 .brand img{height:44px;width:auto}
@@ -102,9 +102,9 @@ p{margin:0;text-wrap:pretty}
 .nav a{color:#fff;text-decoration:none;font-weight:600;font-size:1rem;padding:10px 0;position:relative}
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:3px;border-radius:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
 .nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}
-.lang{display:flex;padding:3px;border-radius:10px;background:rgba(5,16,60,.35)}
+.lang{display:flex;padding:3px;border-radius:10px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
 .lang button{min-width:44px;min-height:44px;border:0;border-radius:8px;background:none;color:#fff;font:800 .85rem var(--display);cursor:pointer;transition:background-color .2s,color .2s}
-.lang button[aria-pressed=true]{background:#fff;color:var(--blue)}
+.lang button[aria-pressed=true]{background:#fff;color:var(--night)}
 .hdr .btn{min-height:44px;padding:.4em 1em;font-size:.95rem}
 .hdr .btn .num{display:none}
 @media (min-width:900px){.nav{display:flex}.hdr .btn .num{display:inline}.hdr .btn .lbl{display:none}.brand img{height:50px}.hdr-in{gap:28px}}
@@ -112,31 +112,29 @@ p{margin:0;text-wrap:pretty}
 @media (max-width:359px){.brand img{height:36px}}
 
 /* Hero */
-.hero{position:relative;color:#fff;background:var(--hex),radial-gradient(120% 90% at 78% 30%,#1D5BFF 0%,var(--blue) 42%,#0829A0 100%);padding:112px 0 0;overflow:hidden}
-.hero-in{display:grid;gap:28px;align-items:end}
-.hero-copy{padding-bottom:8px}
-.hero h1{font-size:clamp(2.35rem,7.4vw,4.4rem);letter-spacing:-.03em}
+.hero{position:relative;isolation:isolate;color:#fff;background:var(--night);display:flex;flex-direction:column;justify-content:center;min-height:min(100svh,900px);padding:120px 0 0}
+.hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-bg{width:100%;height:100%;object-fit:cover;object-position:68% 40%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,18,51,.6) 0%,rgba(7,18,51,.1) 28%,rgba(7,18,51,.1) 62%,rgba(7,18,51,.8) 100%),linear-gradient(90deg,rgba(7,18,51,.95) 0%,rgba(7,18,51,.82) 36%,rgba(7,18,51,.28) 68%,rgba(7,18,51,.08) 100%)}
+.hero-in{flex:1;display:flex;align-items:center;padding-block:24px 56px}
+.hero-copy{max-width:52rem}
+.hero h1{font-size:clamp(2.35rem,6vw,4.2rem);letter-spacing:-.03em;text-shadow:0 2px 30px rgba(4,10,36,.5)}
 .hero h1 em{font-style:italic;font-weight:900;color:var(--yellow)}
-.hero-lead{margin-top:20px;font-size:clamp(1.1rem,2.2vw,1.3rem);max-width:34em;color:#DCE7FF}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-lead{margin-top:22px;font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:32em;color:#E1E8FA}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .cta .btn{flex:1 1 220px}
-.creds{list-style:none;margin:34px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px;font-weight:600;font-size:1rem;color:#fff}
-.creds li{display:flex;align-items:center;gap:8px}
-.creds .ico{color:var(--yellow)}
-.hero-art{position:relative;justify-self:center;width:min(64vw,300px);margin-bottom:-6px}
-.hero-art::before{content:"";position:absolute;left:50%;top:46%;width:150%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(closest-side,rgba(56,182,255,.5),rgba(56,182,255,0) 70%)}
-.hero-art::after{content:"";position:absolute;left:8%;right:4%;bottom:26px;height:26px;border-radius:50%;background:rgba(4,14,60,.5);filter:blur(10px)}
-.hero-art img{position:relative;z-index:1;margin-bottom:40px}
-.swoosh{position:relative;display:block;width:100%;height:clamp(46px,7vw,96px);margin-top:-40px}
-@media (min-width:900px){
+.creds{position:relative;z-index:2;list-style:none;margin:0 0 -52px;padding:8px;display:grid;gap:0;background:#fff;color:var(--ink);border-radius:20px;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 2px 6px rgba(7,18,51,.08),0 30px 60px -24px rgba(7,18,51,.55)}
+.creds li{display:flex;align-items:center;gap:14px;padding:14px 16px;font-weight:600;font-size:1rem;line-height:1.3}
+.creds li+li{border-top:1px solid var(--line)}
+.creds .cico{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--mist);color:var(--blue)}
+.creds .cico .ico{width:22px;height:22px}
+.creds small{display:block;font-weight:400;font-size:.9rem;color:var(--muted)}
+@media (min-width:860px){
   .hero{padding-top:132px}
-  .hero-in{grid-template-columns:1.25fr .75fr;gap:40px}
-  .hero-copy{padding-bottom:86px}
   .cta .btn{flex:0 0 auto}
-  .hero-art{width:min(100%,400px);justify-self:end;margin-bottom:-30px}
-  .hero-art img{margin-bottom:0}
-  .hero-art::after{bottom:48px}
-  .swoosh{margin-top:-60px}
+  .creds{grid-template-columns:repeat(3,1fr);padding:10px}
+  .creds li{padding:16px 22px}
+  .creds li+li{border-top:0;border-left:1px solid var(--line)}
 }
 
 /* Sections */
@@ -144,7 +142,7 @@ p{margin:0;text-wrap:pretty}
 .sec-head p{margin-top:16px;color:var(--muted);max-width:36em}
 
 /* Marquee */
-.mq{background:var(--yellow);color:var(--navy);overflow:hidden;padding:16px 0;margin-top:-1px}
+.mq{background:var(--mist);color:var(--navy);overflow:hidden;padding:92px 0 20px;border-bottom:1px solid var(--line)}
 .mq-t{display:flex;width:max-content}
 .mq-g{display:flex;align-items:center;flex:none}
 .mq-g span{font:italic 900 clamp(1.05rem,2.6vw,1.5rem)/1 var(--display);text-transform:uppercase;letter-spacing:-.01em;white-space:nowrap}
@@ -160,7 +158,7 @@ p{margin:0;text-wrap:pretty}
 .card{position:relative;isolation:isolate;overflow:hidden;border-radius:24px;min-height:340px;display:flex;align-items:flex-end;color:#fff;background:var(--navy);box-shadow:0 30px 50px -34px rgba(11,30,107,.6)}
 .card img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 .card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,22,85,.1) 0%,rgba(8,22,85,.25) 38%,rgba(8,22,85,.93) 86%);transition:opacity .5s}
-.card-ico{position:absolute;top:20px;left:20px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--navy);box-shadow:0 8px 18px -8px rgba(5,16,60,.7);transition:transform .22s var(--ease)}
+.card-ico{position:absolute;top:20px;left:20px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--blue);box-shadow:0 8px 18px -8px rgba(5,16,60,.7);transition:transform .22s var(--ease)}
 .card-ico .ico{width:26px;height:26px}
 .card-b{padding:26px;transition:transform .22s var(--ease)}
 .card h3{font-size:clamp(1.35rem,2.4vw,1.7rem)}
@@ -171,13 +169,13 @@ p{margin:0;text-wrap:pretty}
 /* Area call to action */
 .area{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--navy);padding:clamp(80px,13vw,170px) 0}
 .area-bg{position:absolute;inset:-12% 0;z-index:-2;width:100%;height:124%;object-fit:cover;object-position:50% 70%;transform:translate3d(0,var(--py,0px),0);will-change:transform}
-.area::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(8,22,85,.95) 0%,rgba(9,40,150,.86) 46%,rgba(11,63,214,.5) 100%)}
+.area::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(7,18,51,.96) 0%,rgba(7,18,51,.86) 46%,rgba(10,26,79,.55) 100%)}
 .area h2{font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,6.6vw,4.6rem);letter-spacing:-.03em;max-width:12em}
 .area h2 em{color:var(--yellow);font-style:inherit}
 .area p{margin-top:18px;font-size:clamp(1.1rem,2.2vw,1.3rem);color:#E4ECFF;max-width:30em}
 
 /* Credentials */
-.why{background:var(--hex),linear-gradient(180deg,#0B1E6B,#081655);color:#fff}
+.why{background:var(--hex),linear-gradient(180deg,var(--navy),var(--night));color:#fff}
 .why .sec-head p{color:#C5D2F5}
 .facts{list-style:none;padding:0;margin:52px 0 0;display:grid;gap:0}
 .facts li{padding:28px 0;border-top:1px solid rgba(255,255,255,.2)}
@@ -194,7 +192,7 @@ p{margin:0;text-wrap:pretty}
 /* Steps */
 .steps{list-style:none;counter-reset:s;margin:48px 0 0;padding:0;display:grid;gap:36px}
 .steps li{counter-increment:s;position:relative;padding-left:76px}
-.steps li::before{content:counter(s);position:absolute;left:0;top:-4px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font:italic 900 1.5rem var(--display)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-4px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--yellow);font:italic 900 1.5rem var(--display);box-shadow:0 12px 22px -10px rgba(7,18,51,.7)}
 .steps p{margin-top:8px;color:var(--muted)}
 @media (min-width:860px){
   .steps{grid-template-columns:repeat(3,1fr);gap:40px}
@@ -240,7 +238,7 @@ p{margin:0;text-wrap:pretty}
 @media (min-width:940px){.contact-in{grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}.reach{position:sticky;top:120px}}
 
 /* Footer */
-.ftr{background:var(--navy);color:#C5D2F5;padding:56px 0 110px;font-size:1rem}
+.ftr{background:var(--night);color:#C5D2F5;padding:56px 0 110px;font-size:1rem}
 .ftr-in{display:grid;gap:36px}
 .ftr img{width:250px}
 .ftr h3{font-size:1rem;color:#fff;margin-bottom:10px}
@@ -254,7 +252,8 @@ p{margin:0;text-wrap:pretty}
 @media (min-width:800px){.ftr-in{grid-template-columns:1.5fr 1fr 1fr}.ftr{padding-bottom:56px}}
 
 /* WhatsApp */
-.wa{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:10px;height:60px;min-width:60px;padding:0 16px;border-radius:30px;background:var(--wa);color:#fff;text-decoration:none;font:800 1rem var(--display);box-shadow:0 12px 26px -8px rgba(6,60,28,.7);transition:transform .25s var(--ease),background-color .2s}
+.reach-art{width:190px;margin:24px 0 0}
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:10px;height:60px;min-width:60px;padding:0 16px;border-radius:30px;background:var(--wa);color:#fff;text-decoration:none;font:800 1rem var(--display);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 2px 4px rgba(4,10,36,.3),0 16px 30px -8px rgba(4,30,16,.7);transition:transform .25s var(--ease),background-color .2s}
 .wa svg{width:28px;height:28px;fill:currentColor;flex:none}
 .wa span{display:none}
 @media (min-width:900px){.wa span{display:inline}.wa{padding:0 22px 0 18px}}
@@ -274,29 +273,33 @@ p{margin:0;text-wrap:pretty}
 .splash,.splash-y{display:none}
 .js.sp{overflow:hidden}
 .js.sp .splash,.js.sp .splash-y,.splash.out,.splash-y.out{display:grid;position:fixed;inset:0;place-items:center}
-.splash{z-index:210;background:var(--hex),linear-gradient(180deg,rgba(8,41,160,0) 62%,#0829A0 100%),radial-gradient(110% 80% at 50% 42%,#1D5BFF 0%,var(--blue) 45%,#0829A0 100%)}
-.splash-y{z-index:205;background:var(--yellow)}
-.sp-in{width:min(76vw,430px)}
+.splash{z-index:210;background:radial-gradient(70% 55% at 50% 44%,rgba(31,85,218,.5) 0%,rgba(31,85,218,0) 70%),var(--hex),var(--night)}
+.splash-y{z-index:205;background:var(--blue)}
+.sp-in{width:min(74vw,400px)}
 .sp-logo{position:relative}
-.sp-logo img{width:100%}
+.sp-logo img{width:100%;filter:drop-shadow(0 18px 30px rgba(2,6,24,.6))}
 .sp-logo::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.95) 50%,transparent 65%) 0 0/300% 100% no-repeat;-webkit-mask:url(assets/logo-full.svg) center/100% 100% no-repeat;mask:url(assets/logo-full.svg) center/100% 100% no-repeat;background-position:130% 0;mix-blend-mode:soft-light}
-.sp-bar{height:6px;width:64%;margin:30px auto 0;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden}
-.sp-bar i{display:block;height:100%;border-radius:3px;background:var(--yellow);transform:scaleX(var(--p,0));transform-origin:left;transition:transform .45s cubic-bezier(.3,.7,.3,1)}
-.sp-pct{margin-top:14px;text-align:center;color:#DCE7FF;font:800 .85rem var(--display);letter-spacing:.08em;font-variant-numeric:tabular-nums}
+.sp-row{display:flex;align-items:center;gap:16px;margin-top:38px}
+.sp-bar{flex:1;height:2px;border-radius:2px;background:rgba(255,255,255,.16);overflow:hidden}
+.sp-bar i{display:block;height:100%;background:linear-gradient(90deg,#fff,var(--yellow));transform:scaleX(var(--p,0));transform-origin:left;transition:transform .45s cubic-bezier(.3,.7,.3,1)}
+.sp-pct{min-width:3.2em;text-align:right;color:#fff;font:800 .95rem var(--display);font-variant-numeric:tabular-nums}
+.sp-tag{margin-top:14px;color:#9FB0E0;font:600 .95rem var(--body)}
 .splash.out,.splash-y.out{pointer-events:none}
 .splash::before,.splash-y::before{content:"";position:absolute;left:0;right:0;top:100%;height:20vh;margin-top:-1px;background:inherit;border-radius:0 0 50% 50%/0 0 100% 100%}
-.splash::before{background:#0829A0}
+.splash::before{background:var(--night)}
 
 /* Motion */
 @media (prefers-reduced-motion:no-preference){
   .sp-logo img{animation:spIn .9s var(--ease) both}
   .sp-logo::after{animation:spShine 1.5s ease-in-out .5s infinite}
-  .sp-bar,.sp-pct{animation:fade .5s ease .2s both}
+  .sp-row,.sp-tag{animation:fade .5s ease .25s both}
+  .sp-logo{animation:spWipe .9s var(--ease-io) both}
+  @keyframes spWipe{from{clip-path:inset(-20% 100% -20% 0)}to{clip-path:inset(-20% 0 -20% 0)}}
   /* Exit: blue and yellow sheets leave as one wave; the hero starts underneath while they travel */
   .splash.out{animation:spOut .9s var(--ease-io) forwards}
   .splash-y.out{animation:spOut .9s var(--ease-io) .11s forwards}
   .splash.out .sp-in{animation:spLogoOut .35s ease-out forwards}
-  @keyframes spIn{from{opacity:0;transform:scale(.92) translateY(10px);filter:blur(10px)}}
+  @keyframes spIn{from{opacity:0;transform:translateX(-14px)}}
   @keyframes spShine{from{background-position:130% 0}60%,to{background-position:-30% 0}}
   @keyframes spOut{to{transform:translateY(-125%)}}
   @keyframes spLogoOut{to{opacity:0;transform:translateY(-24px)}}
@@ -321,26 +324,22 @@ p{margin:0;text-wrap:pretty}
   .js .steps li[data-r]{transition-delay:calc(var(--i,0)*120ms)}
 
   /* Hero entrance. Lead: headline. Support: paragraph, buttons, mascot. Decoration fades only. */
-  .js:not(.loaded) .hero-copy>*,.js:not(.loaded) .hero-art,.js:not(.loaded) .wa,.js:not(.loaded) .hdr-in{opacity:0}
+  .js:not(.loaded) .hero-copy>*,.js:not(.loaded) .creds,.js:not(.loaded) .wa,.js:not(.loaded) .hdr-in{opacity:0}
   .loaded .hdr-in{animation:fade .6s ease .35s both}
   .loaded .hero h1{animation:rise .9s var(--ease) .3s both}
   .loaded .hero-lead{animation:rise2 .8s var(--ease) .39s both}
   .loaded .hero .cta{animation:rise2 .8s var(--ease) .46s both}
-  .loaded .creds{animation:fade .7s ease .6s both}
-  .loaded .hero-art{animation:fade .5s ease .4s both}
-  .loaded .hero-art img{animation:pop .9s var(--ease) .4s both,bob 5s ease-in-out 3.5s infinite;transform-origin:50% 100%}
-  .loaded .hero-art::after{animation:shade 5s ease-in-out 3.5s infinite}
+  .loaded .creds{animation:rise2 .8s var(--ease) .56s both}
+  .loaded .hero-bg{animation:settle 1.6s var(--ease) .1s both}
   .loaded .wa{animation:pop2 .4s var(--ease) 1.3s both}
   .mq-t{animation:mq 32s linear infinite}
-  .mq:hover .mq-t,.idle .mq-t,.idle.hero .hero-art img,.idle.hero .hero-art::after{animation-play-state:paused}
+  .mq:hover .mq-t,.idle .mq-t{animation-play-state:paused}
   .btn-y:hover::after,.btn-blue:hover::after,.btn-navy:hover::after{opacity:1;animation:shine .7s var(--ease)}
   @keyframes fade{from{opacity:0}}
+  @keyframes settle{from{transform:scale(1.08)}}
   @keyframes rise{from{opacity:0;transform:translateY(28px);filter:blur(6px)}}
   @keyframes rise2{from{opacity:0;transform:translateY(16px)}}
-  @keyframes pop{from{transform:translateY(48px) scale(.94) rotate(-3deg)}}
   @keyframes pop2{from{opacity:0;transform:scale(.9)}}
-  @keyframes bob{50%{translate:0 -8px}}
-  @keyframes shade{50%{scale:.92;opacity:.8}}
   @keyframes mq{to{transform:translateX(-50%)}}
   @keyframes shine{to{transform:translateX(330%) skewX(-20deg)}}
   ::view-transition-old(root),::view-transition-new(root){animation-duration:.22s}
@@ -355,7 +354,7 @@ p{margin:0;text-wrap:pretty}
 </style>
 </head>
 <body>
-<div class="splash" id="splash" aria-hidden="true"><div class="sp-in"><div class="sp-logo"><img src="assets/logo-full.svg" width="661" height="264" alt=""></div><div class="sp-bar"><i id="spBar"></i></div><div class="sp-pct"><span id="spPct">0</span>%</div></div></div>
+<div class="splash" id="splash" aria-hidden="true"><div class="sp-in"><div class="sp-logo"><img src="assets/logo-full.svg" width="661" height="264" alt=""></div><div class="sp-row"><div class="sp-bar"><i id="spBar"></i></div><div class="sp-pct"><span id="spPct">0</span>%</div></div><div class="sp-tag">Houston, TX</div></div></div>
 <div class="splash-y" id="splashY" aria-hidden="true"></div>
 <div class="prog" id="prog" aria-hidden="true"></div>
 <a class="skip" href="#contacto" data-t="skip">Ir al formulario de contacto</a>
@@ -396,25 +395,24 @@ p{margin:0;text-wrap:pretty}
 
 <main id="inicio">
   <section class="hero">
+    <div class="hero-media"><img class="hero-bg" src="assets/hero.webp" srcset="assets/hero-900.webp 900w, assets/hero.webp 1920w" sizes="100vw" width="1920" height="1280" alt="Técnico midiendo la presión de un equipo de aire acondicionado con manómetros" data-t-alt="heroA" fetchpriority="high"></div>
     <div class="wrap hero-in">
       <div class="hero-copy">
-        <h1 style="--i:0" data-t="h1">Aire acondicionado y calefacción <em>de confianza</em> en Houston</h1>
-        <p class="hero-lead" style="--i:1" data-t="lead">Instalamos, reparamos y damos mantenimiento a su equipo. Vamos a su domicilio en Houston y áreas cercanas.</p>
-        <div class="cta" style="--i:2">
+        <h1 data-t="h1">Aire acondicionado y calefacción <em>de confianza</em> en Houston</h1>
+        <p class="hero-lead" data-t="lead">Instalamos, reparamos y damos mantenimiento a su equipo. Vamos a su domicilio en Houston y áreas cercanas.</p>
+        <div class="cta">
           <a class="btn btn-y" href="tel:+12813029085"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span><span data-t="call">Llamar</span> (281) 302-9085</span></a>
           <a class="btn btn-ghost" href="#contacto"><span data-t="quote">Pedir cotización</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
-        <ul class="creds" style="--i:3">
-          <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><span data-t="cred1">Licencia de Texas TACLB84520</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-award"/></svg><span data-t="cred2">Calificación A+ en BBB</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg><span data-t="cred3">Acreditados desde 1993</span></li>
-        </ul>
-      </div>
-      <div class="hero-art">
-        <img src="assets/mascota.webp" srcset="assets/mascota-420.webp 420w, assets/mascota.webp 840w" sizes="(max-width: 899px) 60vw, 420px" width="840" height="1044" alt="Mascota de Air Energy: un equipo de aire acondicionado sonriente con gorra y tenis azules, levantando el pulgar" data-t-alt="altMascot" fetchpriority="high">
       </div>
     </div>
-    <svg class="swoosh" viewBox="0 0 1440 96" preserveAspectRatio="none" aria-hidden="true"><path d="M0 62C380 6 900 0 1440 44V96H0Z" fill="#FFC900"/><path d="M0 78C400 22 920 18 1440 60V96H0Z" fill="#38B6FF"/><path d="M0 92C420 38 940 36 1440 76V96H0Z" fill="#fff"/></svg>
+    <div class="wrap">
+      <ul class="creds">
+        <li><span class="cico"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span><span><span data-t="c1">Licencia de Texas</span><small>TACLB84520</small></span></li>
+        <li><span class="cico"><svg class="ico" aria-hidden="true"><use href="#i-award"/></svg></span><span><span data-t="c2">Calificación A+</span><small>Better Business Bureau</small></span></li>
+        <li><span class="cico"><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg></span><span><span data-t="c3">Acreditados desde 1993</span><small data-t="c3s">Empresa acreditada por el BBB</small></span></li>
+      </ul>
+    </div>
   </section>
 
   <div class="mq" aria-hidden="true"><div class="mq-t"><div class="mq-g"><span data-t="mq1">Instalación</span><svg class="ico"><use href="#i-snow"/></svg><span data-t="mq2">Reparación</span><svg class="ico"><use href="#i-snow"/></svg><span data-t="mq3">Mantenimiento</span><svg class="ico"><use href="#i-snow"/></svg><span data-t="mq4">Calefacción</span><svg class="ico"><use href="#i-snow"/></svg><span>Houston, TX</span><svg class="ico"><use href="#i-snow"/></svg><span>Your Trusted Company</span><svg class="ico"><use href="#i-snow"/></svg></div><div class="mq-g"><span data-t="mq1">Instalación</span><svg class="ico"><use href="#i-snow"/></svg><span data-t="mq2">Reparación</span><svg class="ico"><use href="#i-snow"/></svg><span data-t="mq3">Mantenimiento</span><svg class="ico"><use href="#i-snow"/></svg><span data-t="mq4">Calefacción</span><svg class="ico"><use href="#i-snow"/></svg><span>Houston, TX</span><svg class="ico"><use href="#i-snow"/></svg><span>Your Trusted Company</span><svg class="ico"><use href="#i-snow"/></svg></div></div></div>
@@ -430,7 +428,7 @@ p{margin:0;text-wrap:pretty}
       </div>
       <ul class="cards" style="list-style:none;margin:0;padding:0">
         <li class="card-w" data-r style="--i:0"><div class="card"><img src="assets/foto-instalacion.webp" width="1024" height="683" alt="" data-t-alt="s1a" loading="lazy"><span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg></span><div class="card-b"><h3 data-t="s1h">Instalación de aire acondicionado</h3><p data-t="s1p">Equipos nuevos y reemplazos, instalados correctamente para su espacio.</p></div></div></li>
-        <li class="card-w" data-r style="--i:1"><div class="card"><img src="assets/foto-reparacion.webp" width="1400" height="933" alt="" data-t-alt="s2a" loading="lazy"><span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg></span><div class="card-b"><h3 data-t="s2h">Reparación</h3><p data-t="s2p">¿No enfría, gotea o hace ruido? Encontramos la falla y la reparamos.</p></div></div></li>
+        <li class="card-w" data-r style="--i:1"><div class="card"><img src="assets/foto-reparacion.webp" width="1300" height="867" alt="" data-t-alt="s2a" loading="lazy"><span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg></span><div class="card-b"><h3 data-t="s2h">Reparación</h3><p data-t="s2p">¿No enfría, gotea o hace ruido? Encontramos la falla y la reparamos.</p></div></div></li>
         <li class="card-w" data-r style="--i:0"><div class="card"><img src="assets/foto-mantenimiento.webp" width="1300" height="993" alt="" data-t-alt="s3a" loading="lazy"><span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-clip"/></svg></span><div class="card-b"><h3 data-t="s3h">Mantenimiento</h3><p data-t="s3p">Limpieza y revisión de su equipo para ayudar a evitar fallas en los meses de más calor.</p></div></div></li>
         <li class="card-w" data-r style="--i:1"><div class="card"><img src="assets/foto-calefaccion.webp" width="1400" height="931" alt="" data-t-alt="s4a" loading="lazy"><span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-flame"/></svg></span><div class="card-b"><h3 data-t="s4h">Calefacción</h3><p data-t="s4p">Instalación y reparación de calefacción para los días fríos.</p></div></div></li>
       </ul>
@@ -490,6 +488,7 @@ p{margin:0;text-wrap:pretty}
           <li><a href="mailto:airenergyac@gmail.com"><span class="rico"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span><span><small data-t="rMail">Correo</small><strong>airenergyac@gmail.com</strong></span></a></li>
           <li><div><span class="rico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><span><small data-t="rArea">Zona de servicio</small><strong data-t="rAreaV">Houston, TX y áreas cercanas</strong></span></div></li>
         </ul>
+        <img class="reach-art" src="assets/mascota-420.webp" width="420" height="522" alt="Mascota de Air Energy: un equipo de aire acondicionado sonriente con gorra y tenis azules, levantando el pulgar" data-t-alt="altMascot" loading="lazy">
       </div>
 
       <form class="form" id="form" action="https://formsubmit.co/airenergyac@gmail.com" method="POST" novalidate data-r>
@@ -570,6 +569,7 @@ p{margin:0;text-wrap:pretty}
       call:'Llamar', quote:'Pedir cotización',
       h1:'Aire acondicionado y calefacción <em>de confianza</em> en Houston',
       lead:'Instalamos, reparamos y damos mantenimiento a su equipo. Vamos a su domicilio en Houston y áreas cercanas.',
+      c1:'Licencia de Texas', c2:'Calificación A+', c3:'Acreditados desde 1993', c3s:'Empresa acreditada por el BBB', heroA:'Técnico midiendo la presión de un equipo de aire acondicionado con manómetros',
       cred1:'Licencia de Texas TACLB84520', cred2:'Calificación A+ en BBB', cred3:'Acreditados desde 1993',
       altMascot:'Mascota de Air Energy: un equipo de aire acondicionado sonriente con gorra y tenis azules, levantando el pulgar',
       svcH:'Todo lo que su equipo necesita para funcionar como debe',
@@ -580,7 +580,7 @@ p{margin:0;text-wrap:pretty}
       s4h:'Calefacción', s4p:'Instalación y reparación de calefacción para los días fríos.',
       bandH:'Su compañía de confianza <em>en Houston</em>', bandP:'Vamos a su domicilio en Houston y áreas cercanas. ¿Su aire no enfría? Llámenos y lo revisamos.',
       pd:'(dominio público)', mq1:'Instalación', mq2:'Reparación', mq3:'Mantenimiento', mq4:'Calefacción', credits:'Fotos de referencia:',
-      s1a:'Unidades exteriores de aire acondicionado instaladas junto a una casa de ladrillo', s2a:'Técnico midiendo la presión de un equipo de aire acondicionado con manómetros', s3a:'Mangueras y medidor digital conectados a una unidad exterior durante una revisión', s4a:'Mano ajustando un termostato digital en la pared de una casa', areaA:'Edificios del centro de Houston, Texas, bajo un cielo despejado',
+      s1a:'Unidades exteriores de aire acondicionado instaladas junto a una casa de ladrillo', s2a:'Manos de un técnico preparando un cable con unas pinzas', s3a:'Mangueras y medidor digital conectados a una unidad exterior durante una revisión', s4a:'Mano ajustando un termostato digital en la pared de una casa', areaA:'Edificios del centro de Houston, Texas, bajo un cielo despejado',
       whyH:'Respaldo que usted puede verificar', whyP:'No le pedimos que confíe a ciegas. Estos son nuestros datos, a la vista.',
       f1h:'Licencia del estado de Texas', f1p:'Contratista de aire acondicionado y refrigeración con licencia vigente en Texas.',
       f2h:'Calificación en BBB', f2p:'La calificación más alta del Better Business Bureau.',
@@ -611,6 +611,7 @@ p{margin:0;text-wrap:pretty}
       call:'Call', quote:'Request a quote',
       h1:'Air conditioning and heating <em>you can trust</em> in Houston',
       lead:'We install, repair and maintain your system. We come to you in Houston and surrounding areas.',
+      c1:'Texas License', c2:'A+ Rating', c3:'Accredited since 1993', c3s:'BBB Accredited Business', heroA:'Technician checking an air conditioning system’s pressure with manifold gauges',
       cred1:'Texas License TACLB84520', cred2:'BBB A+ Rated', cred3:'Accredited since 1993',
       altMascot:'Air Energy mascot: a smiling air conditioning unit with a cap and blue sneakers giving a thumbs up',
       svcH:'Everything your system needs to run the way it should',
@@ -621,7 +622,7 @@ p{margin:0;text-wrap:pretty}
       s4h:'Heating', s4p:'Heating installation and repair for the cold days.',
       bandH:'Your trusted company <em>in Houston</em>', bandP:'We come to you in Houston and surrounding areas. AC not cooling? Call us and we will take a look.',
       pd:'(public domain)', mq1:'Installation', mq2:'Repair', mq3:'Maintenance', mq4:'Heating', credits:'Reference photos:',
-      s1a:'Outdoor air conditioning units installed next to a brick house', s2a:'Technician checking an air conditioning system’s pressure with manifold gauges', s3a:'Hoses and a digital gauge connected to an outdoor unit during a check-up', s4a:'Hand adjusting a digital thermostat on a home wall', areaA:'Downtown Houston, Texas buildings under a clear sky',
+      s1a:'Outdoor air conditioning units installed next to a brick house', s2a:'A technician’s hands preparing a wire with pliers', s3a:'Hoses and a digital gauge connected to an outdoor unit during a check-up', s4a:'Hand adjusting a digital thermostat on a home wall', areaA:'Downtown Houston, Texas buildings under a clear sky',
       whyH:'Credentials you can verify', whyP:'We do not ask you to take our word for it. Here are our details, in plain sight.',
       f1h:'State of Texas license', f1p:'Licensed air conditioning and refrigeration contractor in Texas.',
       f2h:'BBB rating', f2p:'The highest rating from the Better Business Bureau.',
@@ -681,7 +682,7 @@ p{margin:0;text-wrap:pretty}
         setTimeout(function(){sp.remove(); sy.remove();},1300);
       },calm?0:260);
     }
-    var hero=d.querySelector('.hero-art img');
+    var hero=d.querySelector('.hero-bg');
     var waits=[d.fonts&&d.fonts.ready?d.fonts.ready:0, hero.complete?0:new Promise(function(r){hero.addEventListener('load',r);hero.addEventListener('error',r);})];
     Promise.all(waits).then(function(){ready=true; setTimeout(finish,Math.max(0,min-(performance.now()-t0)));});
     setTimeout(finish,max);
@@ -701,7 +702,7 @@ p{margin:0;text-wrap:pretty}
   frame(); window.addEventListener('scroll',onScroll,{passive:true}); window.addEventListener('resize',onScroll);
 
   if('IntersectionObserver' in window){var loops=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('idle',!e.isIntersecting);});});
-    d.querySelectorAll('.hero,.mq').forEach(function(e){loops.observe(e);});}
+    d.querySelectorAll('.mq').forEach(function(e){loops.observe(e);});}
   var els=d.querySelectorAll('[data-r]');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.12});
