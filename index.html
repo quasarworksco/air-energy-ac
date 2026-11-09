@@ -75,7 +75,7 @@ p{margin:0;text-wrap:pretty}
 .wrap{width:min(100% - 2*var(--gut),var(--wrap));margin-inline:auto}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .ico{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--yellow);color:var(--navy);padding:10px 16px;border-radius:8px;font-weight:600;transition:top .15s}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--yellow);color:var(--navy);padding:10px 16px;border-radius:8px;font-weight:600}
 .skip:focus{top:12px}
 
 /* Buttons */
@@ -158,14 +158,14 @@ p{margin:0;text-wrap:pretty}
 .cards{display:grid;gap:18px}
 .card-w{display:grid}
 .card{position:relative;isolation:isolate;overflow:hidden;border-radius:24px;min-height:340px;display:flex;align-items:flex-end;color:#fff;background:var(--navy);box-shadow:0 30px 50px -34px rgba(11,30,107,.6)}
-.card img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.card img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 .card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,22,85,.1) 0%,rgba(8,22,85,.25) 38%,rgba(8,22,85,.93) 86%);transition:opacity .5s}
-.card-ico{position:absolute;top:20px;left:20px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--navy);box-shadow:0 8px 18px -8px rgba(5,16,60,.7);transition:transform .6s var(--ease)}
+.card-ico{position:absolute;top:20px;left:20px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--navy);box-shadow:0 8px 18px -8px rgba(5,16,60,.7);transition:transform .22s var(--ease)}
 .card-ico .ico{width:26px;height:26px}
-.card-b{padding:26px;transition:transform .6s var(--ease)}
+.card-b{padding:26px;transition:transform .22s var(--ease)}
 .card h3{font-size:clamp(1.35rem,2.4vw,1.7rem)}
 .card p{margin-top:8px;color:#DCE7FF;max-width:30em}
-@media (hover:hover) and (pointer:fine){.card:hover img{transform:scale(1.03)}.card:hover .card-ico{transform:rotate(-12deg) scale(1.1)}.card:hover .card-b{transform:translateY(-6px)}}
+@media (hover:hover) and (pointer:fine){.card:hover img{transform:scale(1.03)}.card:hover .card-ico{transform:rotate(-8deg) scale(1.06)}.card:hover .card-b{transform:translateY(-4px)}}
 @media (min-width:760px){.cards{grid-template-columns:repeat(12,1fr);gap:22px}.card{min-height:400px}.card-w:nth-child(1),.card-w:nth-child(4){grid-column:span 7}.card-w:nth-child(2),.card-w:nth-child(3){grid-column:span 5}}
 
 /* Area call to action */
@@ -263,8 +263,8 @@ p{margin:0;text-wrap:pretty}
 
 /* Buttons shine */
 .btn-y,.btn-blue,.btn-navy{position:relative;overflow:hidden}
-.btn-y::after,.btn-blue::after,.btn-navy::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);pointer-events:none;opacity:0}
-.btn .ico{transition:transform .3s var(--ease)}
+.btn-y::after,.btn-blue::after,.btn-navy::after{content:"";position:absolute;top:0;bottom:0;left:0;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-160%) skewX(-20deg);pointer-events:none;opacity:0}
+.btn .ico{transition:transform .2s var(--ease)}
 @media (hover:hover) and (pointer:fine){.btn:hover .ico{transform:translateX(3px)}}
 
 /* Scroll progress */
@@ -274,7 +274,7 @@ p{margin:0;text-wrap:pretty}
 .splash,.splash-y{display:none}
 .js.sp{overflow:hidden}
 .js.sp .splash,.js.sp .splash-y,.splash.out,.splash-y.out{display:grid;position:fixed;inset:0;place-items:center}
-.splash{z-index:210;background:var(--hex),radial-gradient(110% 80% at 50% 42%,#1D5BFF 0%,var(--blue) 45%,#0829A0 100%)}
+.splash{z-index:210;background:var(--hex),linear-gradient(180deg,rgba(8,41,160,0) 62%,#0829A0 100%),radial-gradient(110% 80% at 50% 42%,#1D5BFF 0%,var(--blue) 45%,#0829A0 100%)}
 .splash-y{z-index:205;background:var(--yellow)}
 .sp-in{width:min(76vw,430px)}
 .sp-logo{position:relative}
@@ -284,6 +284,8 @@ p{margin:0;text-wrap:pretty}
 .sp-bar i{display:block;height:100%;border-radius:3px;background:var(--yellow);transform:scaleX(var(--p,0));transform-origin:left;transition:transform .45s cubic-bezier(.3,.7,.3,1)}
 .sp-pct{margin-top:14px;text-align:center;color:#DCE7FF;font:800 .85rem var(--display);letter-spacing:.08em;font-variant-numeric:tabular-nums}
 .splash.out,.splash-y.out{pointer-events:none}
+.splash::before,.splash-y::before{content:"";position:absolute;left:0;right:0;top:100%;height:20vh;margin-top:-1px;background:inherit;border-radius:0 0 50% 50%/0 0 100% 100%}
+.splash::before{background:#0829A0}
 
 /* Motion */
 @media (prefers-reduced-motion:no-preference){
@@ -296,20 +298,21 @@ p{margin:0;text-wrap:pretty}
   .splash.out .sp-in{animation:spLogoOut .35s ease-out forwards}
   @keyframes spIn{from{opacity:0;transform:scale(.92) translateY(10px);filter:blur(10px)}}
   @keyframes spShine{from{background-position:130% 0}60%,to{background-position:-30% 0}}
-  @keyframes spOut{to{transform:translateY(-104%);border-radius:0 0 50% 50%/0 0 22% 22%}}
+  @keyframes spOut{to{transform:translateY(-125%)}}
   @keyframes spLogoOut{to{opacity:0;transform:translateY(-24px)}}
 
   /* Scroll reveals: one entrance per block */
-  .js [data-r]{opacity:0;transform:translateY(20px);filter:blur(4px);transition:opacity .7s var(--ease),transform .7s var(--ease),filter .7s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
-  .js [data-r].in{opacity:1;transform:none;filter:none}
+  .js [data-r]{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
+  .js [data-r].in{opacity:1;transform:none}
   /* Photo cards: the clip wipe is the entrance; photo settles with it, text is already in place */
-  .js .card-w[data-r]{opacity:1;transform:none;filter:none}
+  .js .card-w[data-r]{opacity:1;transform:none}
   .js .card-w .card{clip-path:inset(100% 0 0 0 round 24px);transition:clip-path .9s var(--ease-io);transition-delay:calc(var(--i,0)*90ms)}
   .js .card-w.in .card{clip-path:inset(0 0 0 0 round 24px)}
   .js .card-w:not(.in) .card img{transform:scale(1.18)}
   /* Credentials: the value is the lead and rises out of its line; the row itself only fades */
-  .js .facts li[data-r]{transform:none;filter:none;border-top-color:transparent;background:linear-gradient(rgba(255,255,255,.22),rgba(255,255,255,.22)) 0 0/0 1px no-repeat;transition:opacity .7s var(--ease),background-size 1s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
-  .js .facts li.in{background-size:100% 1px}
+  .js .facts li[data-r]{transform:none;border-top-color:transparent;position:relative;transition:opacity .6s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
+  .js .facts li::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.22);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
+  .js .facts li.in::before{transform:none}
   .js .fact-big>span{transform:translateY(105%);transition:transform .8s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
   .js .facts li.in .fact-big>span{transform:none}
   /* Steps: each connector draws after its step lands, cause then effect */
@@ -329,6 +332,7 @@ p{margin:0;text-wrap:pretty}
   .loaded .hero-art::after{animation:shade 5s ease-in-out 3.5s infinite}
   .loaded .wa{animation:pop2 .4s var(--ease) 1.3s both}
   .mq-t{animation:mq 32s linear infinite}
+  .mq:hover .mq-t,.idle .mq-t,.idle.hero .hero-art img,.idle.hero .hero-art::after{animation-play-state:paused}
   .btn-y:hover::after,.btn-blue:hover::after,.btn-navy:hover::after{opacity:1;animation:shine .7s var(--ease)}
   @keyframes fade{from{opacity:0}}
   @keyframes rise{from{opacity:0;transform:translateY(28px);filter:blur(6px)}}
@@ -338,7 +342,7 @@ p{margin:0;text-wrap:pretty}
   @keyframes bob{50%{translate:0 -8px}}
   @keyframes shade{50%{scale:.92;opacity:.8}}
   @keyframes mq{to{transform:translateX(-50%)}}
-  @keyframes shine{from{left:-60%}to{left:130%}}
+  @keyframes shine{to{transform:translateX(330%) skewX(-20deg)}}
   ::view-transition-old(root),::view-transition-new(root){animation-duration:.22s}
 }
 @media (prefers-reduced-motion:reduce){
@@ -696,6 +700,8 @@ p{margin:0;text-wrap:pretty}
   function onScroll(){if(!raf) raf=requestAnimationFrame(frame);}
   frame(); window.addEventListener('scroll',onScroll,{passive:true}); window.addEventListener('resize',onScroll);
 
+  if('IntersectionObserver' in window){var loops=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('idle',!e.isIntersecting);});});
+    d.querySelectorAll('.hero,.mq').forEach(function(e){loops.observe(e);});}
   var els=d.querySelectorAll('[data-r]');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.12});
